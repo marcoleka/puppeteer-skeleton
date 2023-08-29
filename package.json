@@ -5,7 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js",
+    "start": "node index.js true",
+    "headless": "node index.js true",
+    "headful": "node index.js false",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "imports": {

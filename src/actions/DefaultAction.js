@@ -8,7 +8,7 @@ class DefaultAction {
 
     async init() {
         
-        await this.page.goto('http://localhost:8080/');
+        await this.page.goto('http://192.168.1.7:8080/');
         await this.page.setViewport({ width: 1080, height: 1024 });
 
         const searchResultSelector = '::-p-xpath(/html/body/div[2]/h2)';
@@ -28,7 +28,7 @@ class TestAction {
 
     async init() {
         
-        await this.page.goto('http://localhost:8080/');
+        await this.page.goto('http://192.168.1.7:8080/');
         await this.page.setViewport({ width: 1080, height: 1024 });
 
         let searchResultSelector = '::-p-xpath(//*[@id="username"])';
