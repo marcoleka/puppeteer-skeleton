@@ -18,6 +18,8 @@ class ActionManager {
             
             let action = new ActionClass(page);
             await action.init();
+
+            await page.close();
         };
     }
 }
